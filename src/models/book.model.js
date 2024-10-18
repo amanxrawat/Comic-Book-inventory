@@ -27,7 +27,6 @@ const bookSchema = new mongoose.Schema({
     },
     condition: {
         type: String,
-        enum: ['new', 'used'],
         required: true
     },
     description: {

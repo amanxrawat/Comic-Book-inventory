@@ -25,7 +25,8 @@ app.use(express.static("public"))
 app.use(cookieParser());
 
 
-
+import BookRouter from './routes/book.router.js'
+app.use("/api/book",BookRouter)
 
 
 export  {app};
